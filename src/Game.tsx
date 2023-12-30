@@ -6,6 +6,7 @@ import { StatusSection } from './components/layout/StatusSection';
 import { Footer } from './components/layout/Footer';
 import { getUniqueSudoku } from './solver/UniqueSudoku';
 import { useSudokuContext } from './context/SudokuContext';
+import { Introduce } from './IntroduceSudoku';
 
 /**
  * Game is the main React component.
@@ -237,6 +238,7 @@ export const Game: React.FC<{}> = () => {
             onClickFastMode={onClickFastMode}
           />
         </div>
+        <Introduce />
         <Footer />
       </div>
       <div className= { overlay
