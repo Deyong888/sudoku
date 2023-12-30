@@ -386,8 +386,30 @@ input:checked + .status__action-fast-mode-slider:before {
   margin: 80px;
   text-align: center;
   font-size: 14px;
+} 
+*/
+/* Paragraphs */
+.IntroduceSudoku h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
- */
+
+.IntroduceSudoku p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+.IntroduceSudoku  ol,ul {
+  list-style-position: inside;
+  padding-inline-start: 1rem;
+}
+
+.IntroduceSudoku li {
+  margin-bottom: 0.5rem;
+}
+
 
 /**
  * Footer Section
