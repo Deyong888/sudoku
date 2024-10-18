@@ -7,11 +7,14 @@ import Footer from './components/Footer';
 import './App.css';
 import { SudokuProvider } from './context/SudokuContext';
 import './i18n'; // 导入 i18n 配置
+import { useGoogleAnalytics } from './hooks/useGoogleAnalytics';
 
 /**
  * App is the root React component.
  */
 const App: React.FC = () => {
+  useGoogleAnalytics();
+
   return (
     <Router>
       <SudokuProvider>
