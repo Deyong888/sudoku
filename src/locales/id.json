@@ -1,0 +1,29 @@
+{
+    "introduceSudoku": {
+      "title": "Selamat Datang di Permainan Sudoku",
+      "whatIsSudoku": "Apa itu Sudoku?",
+      "answer": "Sudoku adalah teka-teki penempatan angka berbasis logika dan kombinatorik. Dalam Sudoku klasik, tujuannya adalah mengisi grid 9×9 dengan angka sehingga setiap kolom, setiap baris, dan masing-masing dari sembilan subgrid 3×3 yang menyusun grid (juga disebut 'kotak', 'blok', atau 'wilayah') berisi semua angka dari 1 hingga 9. Pembuat teka-teki menyediakan grid yang sebagian terisi, yang untuk teka-teki yang dirancang dengan baik memiliki solusi tunggal.",
+      "ruleOfSudoku": "Aturan Sudoku",
+      "rule1": "Masing-masing dari sembilan sub-kotak 3x3 harus berisi angka 1-9, tanpa pengulangan",
+      "rule2": "Setiap baris harus berisi angka 1-9, tanpa pengulangan",
+      "rule3": "Setiap kolom harus berisi angka 1-9, tanpa pengulangan",
+      "rule4": "Masing-masing dari sembilan sub-kotak 3x3 harus berisi angka 1-9, tanpa pengulangan",
+      "rule5": "Angka 1-9 harus muncul tepat satu kali di setiap baris, kolom, dan sub-kotak 3x3",
+      "howToPlay": "Cara bermain",
+      "howToPlayAnswer1": "Pindai teka-teki untuk angka yang mudah. Cari baris, kolom, atau kotak yang hanya memiliki satu nilai yang mungkin untuk sebuah sel. Ini disebut 'single'. Isi sel-sel ini dengan angka yang sesuai.",
+      "howToPlayAnswer2": "Gunakan tanda pensil untuk mencatat nilai yang mungkin untuk setiap sel. Saat Anda memecahkan teka-teki, Anda mungkin menemukan sel yang memiliki lebih dari satu nilai yang mungkin. Tandai sel-sel ini dengan tanda pensil untuk mengingatkan diri Anda tentang kemungkinan-kemungkinan tersebut.",
+      "howToPlayAnswer3": "Gunakan logika untuk menghilangkan nilai yang tidak mungkin. Cari sel di mana nilai tertentu tidak dapat ditempatkan karena akan melanggar aturan Sudoku. Misalnya, jika sebuah baris sudah berisi angka 1, 2, dan 3, maka tidak ada sel lain di baris itu yang dapat berisi angka-angka tersebut.",
+      "howToPlayAnswer4": "Gunakan teknik lanjutan untuk memecahkan teka-teki. Seiring Anda menjadi lebih berpengalaman dalam memecahkan teka-teki Sudoku, Anda dapat mempelajari teknik lanjutan yang dapat membantu Anda memecahkan bahkan teka-teki yang paling sulit. Beberapa teknik ini termasuk:",
+      "howToPlayAnswer4.1": "X-Wing: Teknik ini digunakan untuk menghilangkan nilai yang tidak mungkin di sel-sel yang berada di baris atau kolom yang sama dengan dua sel yang berisi nilai yang sama.",
+      "howToPlayAnswer4.2": "Swordfish: Teknik ini digunakan untuk menghilangkan nilai yang tidak mungkin di sel-sel yang berada di kotak yang sama dengan tiga sel yang berisi nilai yang sama.",
+      "howToPlayAnswer4.3": "Hidden Singles: Teknik ini digunakan untuk menemukan nilai yang merupakan satu-satunya nilai yang mungkin untuk sebuah sel, meskipun itu bukan satu-satunya nilai yang mungkin untuk sel lain di baris, kolom, atau kotak yang sama.",
+      "howToPlayAnswer5": "Bersabarlah dan gigih. Teka-teki Sudoku bisa menantang, tetapi juga sangat memuaskan untuk dipecahkan. Jika Anda terjebak, istirahat sejenak dan kembali ke teka-teki nanti. Dengan latihan, Anda akan menjadi lebih cepat dan lebih terampil dalam memecahkan teka-teki Sudoku.",
+      "additionalInfo": "Tips tambahan untuk memecahkan teka-teki Sudoku:",
+      "additionalInfoAnswer1": "Mulailah dengan teka-teki yang paling mudah. Seiring Anda menjadi lebih berpengalaman, Anda dapat mencoba teka-teki yang lebih sulit.",
+      "additionalInfoAnswer2": "Ambil istirahat. Jika Anda terjebak, istirahat sejenak dan kembali ke teka-teki nanti.",
+      "additionalInfoAnswer3": "Gunakan pensil. Tanda pensil akan membantu Anda melacak nilai yang mungkin untuk setiap sel.",
+      "additionalInfoAnswer4": "Jangan takut membuat kesalahan. Semua orang membuat kesalahan saat memecahkan teka-teki Sudoku. Belajarlah dari kesalahan Anda dan terus maju.",
+      "additionalInfoAnswer5": "Bersenang-senanglah! Teka-teki Sudoku adalah cara yang bagus untuk menantang pikiran Anda dan bersenang-senang pada saat yang sama."
+    }
+  }
+

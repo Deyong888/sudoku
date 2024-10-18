@@ -1,0 +1,28 @@
+{
+  "introduceSudoku": {
+    "title": "Bem-vindo ao jogo de Sudoku",
+    "whatIsSudoku": "O que é Sudoku?",
+    "answer": "Sudoku é um quebra-cabeça de colocação de números baseado em lógica e combinatória. No Sudoku clássico, o objetivo é preencher uma grade 9×9 com dígitos de modo que cada coluna, cada linha e cada uma das nove subgrades 3×3 que compõem a grade (também chamadas de 'caixas', 'blocos' ou 'regiões') contenham todos os dígitos de 1 a 9. O criador do quebra-cabeça fornece uma grade parcialmente preenchida, que para um quebra-cabeça bem elaborado tem uma única solução.",
+    "ruleOfSudoku": "Regras do Sudoku",
+    "rule1": "Cada uma das nove sub-caixas 3x3 deve conter os números de 1 a 9, sem repetições",
+    "rule2": "Cada linha deve conter os números de 1 a 9, sem repetições",
+    "rule3": "Cada coluna deve conter os números de 1 a 9, sem repetições",
+    "rule4": "Cada uma das nove sub-caixas 3x3 deve conter os números de 1 a 9, sem repetições",
+    "rule5": "Os números de 1 a 9 devem aparecer exatamente uma vez em cada linha, coluna e sub-caixa 3x3",
+    "howToPlay": "Como jogar",
+    "howToPlayAnswer1": "Examine o quebra-cabeça em busca de números fáceis. Procure linhas, colunas ou caixas que tenham apenas um valor possível para uma célula. Estes são chamados de 'singles'. Preencha essas células com os números apropriados.",
+    "howToPlayAnswer2": "Use marcações a lápis para anotar valores possíveis para cada célula. Conforme você resolve o quebra-cabeça, pode encontrar células que têm mais de um valor possível. Marque essas células com lápis para lembrar as possibilidades.",
+    "howToPlayAnswer3": "Use a lógica para eliminar valores impossíveis. Procure células onde um certo valor não pode ser colocado porque violaria as regras do Sudoku. Por exemplo, se uma linha já contém os dígitos 1, 2 e 3, então nenhuma outra célula nessa linha pode conter esses dígitos.",
+    "howToPlayAnswer4": "Use técnicas avançadas para resolver o quebra-cabeça. À medida que você se torna mais experiente em resolver quebra-cabeças de Sudoku, pode aprender técnicas avançadas que podem ajudá-lo a resolver até os quebra-cabeças mais difíceis. Algumas dessas técnicas incluem:",
+    "howToPlayAnswer4.1": "X-Wing: Esta técnica é usada para eliminar valores impossíveis em células que estão na mesma linha ou coluna que duas células que contêm o mesmo valor.",
+    "howToPlayAnswer4.2": "Swordfish: Esta técnica é usada para eliminar valores impossíveis em células que estão na mesma caixa que três células que contêm o mesmo valor.",
+    "howToPlayAnswer4.3": "Hidden Singles: Esta técnica é usada para encontrar valores que são o único valor possível para uma célula, mesmo que não sejam o único valor possível para qualquer outra célula na mesma linha, coluna ou caixa.",
+    "howToPlayAnswer5": "Seja paciente e persistente. Os quebra-cabeças de Sudoku podem ser desafiadores, mas também são muito gratificantes de resolver. Se você ficar preso, faça uma pausa e volte ao quebra-cabeça mais tarde. Com a prática, você se tornará mais rápido e habilidoso em resolver quebra-cabeças de Sudoku.",
+    "additionalInfo": "Dicas adicionais para resolver quebra-cabeças de Sudoku:",
+    "additionalInfoAnswer1": "Comece com os quebra-cabeças mais fáceis. À medida que você ganha mais experiência, pode tentar quebra-cabeças mais difíceis.",
+    "additionalInfoAnswer2": "Faça pausas. Se você ficar preso, faça uma pausa e volte ao quebra-cabeça mais tarde.",
+    "additionalInfoAnswer3": "Use um lápis. Marcações a lápis ajudarão você a acompanhar os valores possíveis para cada célula.",
+    "additionalInfoAnswer4": "Não tenha medo de cometer erros. Todo mundo comete erros ao resolver quebra-cabeças de Sudoku. Apenas aprenda com seus erros e siga em frente.",
+    "additionalInfoAnswer5": "Divirta-se! Os quebra-cabeças de Sudoku são uma ótima maneira de desafiar sua mente e se divertir ao mesmo tempo."
+  }
+}

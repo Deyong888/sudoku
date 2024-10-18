@@ -1,0 +1,28 @@
+{
+    "introduceSudoku": {
+      "title": "Willkommen beim Sudoku-Spiel",
+      "whatIsSudoku": "Was ist Sudoku?",
+      "answer": "Sudoku ist ein logisches, kombinatorisches Zahlenplatzierungsrätsel. Beim klassischen Sudoku besteht das Ziel darin, ein 9×9-Gitter mit Ziffern so zu füllen, dass jede Spalte, jede Zeile und jedes der neun 3×3-Unterraster, die das Gitter bilden (auch 'Boxen', 'Blöcke' oder 'Regionen' genannt), alle Ziffern von 1 bis 9 enthält. Der Rätselersteller gibt ein teilweise ausgefülltes Gitter vor, das für ein gut gestelltes Rätsel eine eindeutige Lösung hat.",
+      "ruleOfSudoku": "Regeln des Sudoku",
+      "rule1": "Jede der neun 3x3-Unterboxen muss die Zahlen 1-9 ohne Wiederholungen enthalten",
+      "rule2": "Jede Zeile muss die Zahlen 1-9 ohne Wiederholungen enthalten",
+      "rule3": "Jede Spalte muss die Zahlen 1-9 ohne Wiederholungen enthalten",
+      "rule4": "Jede der neun 3x3-Unterboxen muss die Zahlen 1-9 ohne Wiederholungen enthalten",
+      "rule5": "Die Zahlen 1-9 müssen in jeder Zeile, Spalte und 3x3-Unterbox genau einmal vorkommen",
+      "howToPlay": "Wie man spielt",
+      "howToPlayAnswer1": "Scannen Sie das Rätsel nach einfachen Zahlen. Suchen Sie nach Zeilen, Spalten oder Boxen, die nur einen möglichen Wert für eine Zelle haben. Diese werden 'Singles' genannt. Füllen Sie diese Zellen mit den entsprechenden Zahlen aus.",
+      "howToPlayAnswer2": "Verwenden Sie Bleistiftmarkierungen, um mögliche Werte für jede Zelle zu notieren. Beim Lösen des Rätsels können Sie auf Zellen stoßen, die mehr als einen möglichen Wert haben. Markieren Sie diese Zellen mit Bleistiftmarkierungen, um sich an die Möglichkeiten zu erinnern.",
+      "howToPlayAnswer3": "Verwenden Sie Logik, um unmögliche Werte auszuschließen. Suchen Sie nach Zellen, in denen ein bestimmter Wert nicht platziert werden kann, weil er gegen die Regeln des Sudoku verstoßen würde. Wenn eine Zeile beispielsweise bereits die Ziffern 1, 2 und 3 enthält, kann keine andere Zelle in dieser Zeile diese Ziffern enthalten.",
+      "howToPlayAnswer4": "Verwenden Sie fortgeschrittene Techniken, um das Rätsel zu lösen. Je erfahrener Sie im Lösen von Sudoku-Rätseln werden, desto mehr fortgeschrittene Techniken können Sie lernen, die Ihnen helfen, selbst die schwierigsten Rätsel zu lösen. Einige dieser Techniken sind:",
+      "howToPlayAnswer4.1": "X-Wing: Diese Technik wird verwendet, um unmögliche Werte in Zellen zu eliminieren, die sich in derselben Zeile oder Spalte wie zwei Zellen befinden, die denselben Wert enthalten.",
+      "howToPlayAnswer4.2": "Swordfish: Diese Technik wird verwendet, um unmögliche Werte in Zellen zu eliminieren, die sich in derselben Box wie drei Zellen befinden, die denselben Wert enthalten.",
+      "howToPlayAnswer4.3": "Versteckte Singles: Diese Technik wird verwendet, um Werte zu finden, die der einzig mögliche Wert für eine Zelle sind, auch wenn sie nicht der einzig mögliche Wert für eine andere Zelle in derselben Zeile, Spalte oder Box sind.",
+      "howToPlayAnswer5": "Seien Sie geduldig und beharrlich. Sudoku-Rätsel können herausfordernd sein, aber es ist auch sehr lohnend, sie zu lösen. Wenn Sie stecken bleiben, machen Sie eine Pause und kommen Sie später zum Rätsel zurück. Mit Übung werden Sie schneller und geschickter im Lösen von Sudoku-Rätseln.",
+      "additionalInfo": "Zusätzliche Tipps zum Lösen von Sudoku-Rätseln:",
+      "additionalInfoAnswer1": "Beginnen Sie mit den einfachsten Rätseln. Mit zunehmender Erfahrung können Sie schwierigere Rätsel versuchen.",
+      "additionalInfoAnswer2": "Machen Sie Pausen. Wenn Sie stecken bleiben, machen Sie eine Pause und kommen Sie später zum Rätsel zurück.",
+      "additionalInfoAnswer3": "Verwenden Sie einen Bleistift. Bleistiftmarkierungen helfen Ihnen, mögliche Werte für jede Zelle im Auge zu behalten.",
+      "additionalInfoAnswer4": "Haben Sie keine Angst, Fehler zu machen. Jeder macht Fehler beim Lösen von Sudoku-Rätseln. Lernen Sie einfach aus Ihren Fehlern und machen Sie weiter.",
+      "additionalInfoAnswer5": "Haben Sie Spaß! Sudoku-Rätsel sind eine großartige Möglichkeit, Ihren Geist herauszufordern und gleichzeitig Spaß zu haben."
+    }
+  }

@@ -6,12 +6,44 @@ import { StatusSection } from './components/layout/StatusSection';
 import { Footer } from './components/layout/Footer';
 import { getUniqueSudoku } from './solver/UniqueSudoku';
 import { useSudokuContext } from './context/SudokuContext';
-import { Introduce } from './IntroduceSudoku';
+import { IntroduceSudoku } from './IntroduceSudoku';
+import { useTranslation } from 'react-i18next';
+import { 
+  FacebookShareButton, TwitterShareButton, WhatsappShareButton, LinkedinShareButton,
+  FacebookIcon, TwitterIcon, WhatsappIcon, LinkedinIcon
+} from 'react-share';
 
 /**
  * Game is the main React component.
  */
 export const Game: React.FC<{}> = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+    document.documentElement.lang = lng;
+    document.documentElement.dir = ['ar', 'ur'].includes(lng) ? 'rtl' : 'ltr';
+  };
+
+  const getLanguageName = (lang: string) => {
+    const languageNames: {[key: string]: string} = {
+      en: 'English',
+      zh: '中文',
+      ja: '日本語',
+      es: 'Español',
+      hi: 'हिन्दी',
+      ar: 'العربية',
+      pt: 'Português',
+      bn: 'বাংলা',
+      ru: 'Русский',
+      fr: 'Français',
+      ur: 'اردو',
+      id: 'Bahasa Indonesia',
+      de: 'Deutsch'
+    };
+    return languageNames[lang] || lang;
+  };
+
   /**
    * All the variables for holding state:
    * gameArray: Holds the current state of the game.
@@ -30,7 +62,7 @@ export const Game: React.FC<{}> = () => {
   let { numberSelected, setNumberSelected,
         gameArray, setGameArray,
         difficulty, setDifficulty,
-        setTimeGameStarted,
+        timeGameStarted, setTimeGameStarted,
         fastMode, setFastMode,
         cellSelected, setCellSelected,
         initArray, setInitArray,
@@ -39,6 +71,7 @@ export const Game: React.FC<{}> = () => {
   let [ history, setHistory ] = useState<string[][]>([]);
   let [ solvedArray, setSolvedArray ] = useState<string[]>([]);
   let [ overlay, setOverlay ] = useState<boolean>(false);
+  let [ showShareButtons, setShowShareButtons ] = useState(false);
 
   /**
    * Creates a new game and initializes the state variables.
@@ -66,6 +99,7 @@ export const Game: React.FC<{}> = () => {
           else
             return cell === solvedArray[cellIndex];
         })) {
+      setShowShareButtons(true);
       return true;
     }
     return false;
@@ -220,8 +254,11 @@ export const Game: React.FC<{}> = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const shareUrl = window.location.href;
+  const shareTitle = t('shareMessage', { time: moment().diff(timeGameStarted, 'seconds') });
+
   return (
-    <>
+    <div dir={['ar', 'ur'].includes(i18n.language) ? 'rtl' : 'ltr'}>
       <div className={overlay?"container blur":"container"}>
         <Header onClick={onClickNewGame}/>
         <div className="innercontainer">
@@ -238,7 +275,18 @@ export const Game: React.FC<{}> = () => {
             onClickFastMode={onClickFastMode}
           />
         </div>
-        <Introduce />
+        <div className="language-selector">
+          {['en', 'zh', 'ja', 'es', 'hi', 'ar', 'pt', 'bn', 'ru', 'fr', 'ur', 'id', 'de'].map((lang) => (
+            <button
+              key={lang}
+              onClick={() => changeLanguage(lang)}
+              className={i18n.language === lang ? 'active' : ''}
+            >
+              {getLanguageName(lang)}
+            </button>
+          ))}
+        </div>
+        <IntroduceSudoku />
         <Footer />
       </div>
       <div className= { overlay
@@ -251,6 +299,23 @@ export const Game: React.FC<{}> = () => {
           You <span className="overlay__textspan1">solved</span> <span className="overlay__textspan2">it!</span>
         </h2>
       </div>
-    </>
+      {showShareButtons && (
+        <div className="share-buttons">
+          <h3>{t('shareYourSuccess')}</h3>
+          <FacebookShareButton url={shareUrl} quote={shareTitle}>
+            <FacebookIcon size={32} round />
+          </FacebookShareButton>
+          <TwitterShareButton url={shareUrl} title={shareTitle}>
+            <TwitterIcon size={32} round />
+          </TwitterShareButton>
+          <WhatsappShareButton url={shareUrl} title={shareTitle}>
+            <WhatsappIcon size={32} round />
+          </WhatsappShareButton>
+          <LinkedinShareButton url={shareUrl} title={shareTitle}>
+            <LinkedinIcon size={32} round />
+          </LinkedinShareButton>
+        </div>
+      )}
+    </div>
   );
 }

@@ -1,7 +1,8 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, ReactNode } from 'react';
 import moment from 'moment';
 
-type SudokuContextProps = {
+// 定义上下文类型
+type SudokuContextType = {
   numberSelected: string,
   setNumberSelected: React.Dispatch<React.SetStateAction<string>>,
   gameArray: string[],
@@ -20,21 +21,13 @@ type SudokuContextProps = {
   setWon: React.Dispatch<React.SetStateAction<boolean>>
 };
 
-
-const SudokuContext = createContext<SudokuContextProps>({ numberSelected: '0', setNumberSelected: () => {},
-                                                          gameArray: [], setGameArray: () => {},
-                                                          difficulty: 'Easy', setDifficulty: () => {},
-                                                          timeGameStarted: moment(), setTimeGameStarted: () => {},
-                                                          fastMode: false, setFastMode: () => {},
-                                                          cellSelected: -1, setCellSelected: () => {},
-                                                          initArray: [], setInitArray: () => {},
-                                                          won: false, setWon: () => {} });
+const SudokuContext = createContext<SudokuContextType | undefined>(undefined);
 
 type SudokuProviderProps = {
-  children: React.ReactElement
+  children: ReactNode;
 };
 
-export const SudokuProvider = ({ children }: SudokuProviderProps) => {
+export const SudokuProvider: React.FC<SudokuProviderProps> = ({ children }) => {
   let [ numberSelected, setNumberSelected ] = useState<string>('0');
   let [ gameArray, setGameArray ] = useState<string[]>([]);
   let [ difficulty,setDifficulty ] = useState<string>('Easy');
@@ -62,7 +55,13 @@ export const SudokuProvider = ({ children }: SudokuProviderProps) => {
   );
 };
 
-export const useSudokuContext = (): SudokuContextProps => useContext(SudokuContext);
+export const useSudokuContext = () => {
+  const context = useContext(SudokuContext);
+  if (context === undefined) {
+    throw new Error('useSudokuContext must be used within a SudokuProvider');
+  }
+  return context;
+};
 
 // Usage
 // const { numberSelected, setNumberSelected } = useNumberValue();

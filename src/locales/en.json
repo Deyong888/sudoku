@@ -1,0 +1,43 @@
+{
+  "introduceSudoku": {
+    "title": "Welcome to Sudoku Game",
+    "whatIsSudoku": "What is Sudoku",
+    "answer": "Sudoku is a logic-based, combinatorial number-placement puzzle. In classic Sudoku, the objective is to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 subgrids that compose the grid (also called 'boxes', 'blocks', or 'regions') contain all of the digits from 1 to 9. The puzzle setter provides a partially completed grid, which for a well-posed puzzle has a single solution.",
+    "ruleOfSudoku": "Rules of Sudoku",
+    "rule1": "Each of the nine 3x3 sub-boxes must contain the numbers 1-9, without repetitions",
+    "rule2": "Each row must contain the numbers 1-9, without repetitions",
+    "rule3": "Each column must contain the numbers 1-9, without repetitions",
+    "rule4": "Each of the nine 3x3 sub-boxes must contain the numbers 1-9, without repetitions",
+    "rule5": "The numbers 1-9 must appear in each row, column, and 3x3 sub-box exactly once",
+    "howToPlay": "How to play",
+    "howToPlayAnswer1": " Scan the puzzle for easy numbers. Look for rows, columns, or boxes that have only one possible value for a cell. These are called 'singles.' Fill in these cells with the appropriate numbers.",
+    "howToPlayAnswer2": "Use pencil marks to note possible values for each cell. As you solve the puzzle, you may come across cells that have more than one possible value. Mark these cells with pencil marks to remind yourself of the possibilities.",
+    "howToPlayAnswer3": "Use logic to eliminate impossible values. Look for cells where a certain value cannot be placed because it would violate the rules of Sudoku. For example, if a row already contains the digits 1, 2, and 3, then no other cell in that row can contain those digits.",
+    "howToPlayAnswer4": "Use advanced techniques to solve the puzzle. As you become more experienced in solving Sudoku puzzles, you can learn advanced techniques that can help you solve even the most difficult puzzles. Some of these techniques include:",
+    "howToPlayAnswer4.1": "X-Wing: This technique is used to eliminate impossible values in cells that are in the same row or column as two cells that contain the same value.",
+    "howToPlayAnswer4.2": "Swordfish: This technique is used to eliminate impossible values in cells that are in the same box as three cells that contain the same value.",
+    "howToPlayAnswer4.3": "Hidden Singles: This technique is used to find values that are the only possible value for a cell, even though they are not the only possible value for any other cell in the same row, column, or box.",
+    "howToPlayAnswer5": "Be patient and persistent. Sudoku puzzles can be challenging, but they are also very rewarding to solve. If you get stuck, take a break and come back to the puzzle later. With practice, you will become faster and more skilled at solving Sudoku puzzles.",
+    "additionalInfo": " Additional tips for solving Sudoku puzzles:",
+    "additionalInfoAnswer1": " Start with the easiest puzzles. As you become more experienced, you can try more difficult puzzles.  ",
+    "additionalInfoAnswer2": " Take breaks. If you get stuck, take a break and come back to the puzzle later.",
+    "additionalInfoAnswer3": " Use a pencil. Pencil marks will help you keep track of possible values for each cell.",
+    "additionalInfoAnswer4": " Don't be afraid to make mistakes. Everyone makes mistakes when solving Sudoku puzzles. Just learn from your mistakes and move on.",
+    "additionalInfoAnswer5": " Have fun! Sudoku puzzles are a great way to challenge your mind and have some fun at the same time."
+  },
+  "shareYourSuccess": "Share your success!",
+  "shareMessage": "I just solved a Sudoku puzzle in {{time}} seconds! Can you beat my time?",
+  "footer": {
+    "allRightsReserved": "All rights reserved.",
+    "about": "About",
+    "policy": "Policy"
+  },
+  "about": {
+    "title": "About Sudoku Game",
+    "description": "Sudoku Game is a fun and challenging number puzzle game. It's designed to exercise your brain and improve your logical thinking skills."
+  },
+  "policy": {
+    "title": "Privacy Policy",
+    "description": "This privacy policy outlines how we collect, use, and protect your personal information when you use our Sudoku Game."
+  }
+}

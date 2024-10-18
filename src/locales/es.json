@@ -1,0 +1,28 @@
+{
+  "introduceSudoku": {
+    "title": "Bienvenido al juego de Sudoku",
+    "whatIsSudoku": "¿Qué es Sudoku?",
+    "answer": "Sudoku es un rompecabezas de colocación de números combinatorio basado en la lógica. En el Sudoku clásico, el objetivo es llenar una cuadrícula de 9×9 con dígitos de modo que cada columna, cada fila y cada una de las nueve subcuadrículas de 3×3 que componen la cuadrícula (también llamadas 'cajas', 'bloques' o 'regiones') contengan todos los dígitos del 1 al 9. El creador del rompecabezas proporciona una cuadrícula parcialmente completada, que para un rompecabezas bien planteado tiene una única solución.",
+    "ruleOfSudoku": "Reglas del Sudoku",
+    "rule1": "Cada una de las nueve subcajas de 3x3 debe contener los números del 1 al 9, sin repeticiones",
+    "rule2": "Cada fila debe contener los números del 1 al 9, sin repeticiones",
+    "rule3": "Cada columna debe contener los números del 1 al 9, sin repeticiones",
+    "rule4": "Cada una de las nueve subcajas de 3x3 debe contener los números del 1 al 9, sin repeticiones",
+    "rule5": "Los números del 1 al 9 deben aparecer exactamente una vez en cada fila, columna y subcaja de 3x3",
+    "howToPlay": "Cómo jugar",
+    "howToPlayAnswer1": "Escanea el rompecabezas buscando números fáciles. Busca filas, columnas o cajas que tengan solo un valor posible para una celda. Estos se llaman 'singles'. Llena estas celdas con los números apropiados.",
+    "howToPlayAnswer2": "Usa marcas de lápiz para anotar los valores posibles para cada celda. A medida que resuelves el rompecabezas, puedes encontrar celdas que tienen más de un valor posible. Marca estas celdas con lápiz para recordar las posibilidades.",
+    "howToPlayAnswer3": "Usa la lógica para eliminar valores imposibles. Busca celdas donde cierto valor no puede ser colocado porque violaría las reglas del Sudoku. Por ejemplo, si una fila ya contiene los dígitos 1, 2 y 3, entonces ninguna otra celda en esa fila puede contener esos dígitos.",
+    "howToPlayAnswer4": "Usa técnicas avanzadas para resolver el rompecabezas. A medida que te vuelves más experimentado en resolver Sudokus, puedes aprender técnicas avanzadas que te ayudarán a resolver incluso los rompecabezas más difíciles. Algunas de estas técnicas incluyen:",
+    "howToPlayAnswer4.1": "X-Wing: Esta técnica se usa para eliminar valores imposibles en celdas que están en la misma fila o columna que dos celdas que contienen el mismo valor.",
+    "howToPlayAnswer4.2": "Swordfish: Esta técnica se usa para eliminar valores imposibles en celdas que están en la misma caja que tres celdas que contienen el mismo valor.",
+    "howToPlayAnswer4.3": "Singles ocultos: Esta técnica se usa para encontrar valores que son el único valor posible para una celda, aunque no sean el único valor posible para cualquier otra celda en la misma fila, columna o caja.",
+    "howToPlayAnswer5": "Sé paciente y persistente. Los rompecabezas de Sudoku pueden ser desafiantes, pero también son muy gratificantes de resolver. Si te atascas, toma un descanso y vuelve al rompecabezas más tarde. Con la práctica, te volverás más rápido y hábil resolviendo Sudokus.",
+    "additionalInfo": "Consejos adicionales para resolver Sudokus:",
+    "additionalInfoAnswer1": "Comienza con los rompecabezas más fáciles. A medida que ganes experiencia, puedes intentar rompecabezas más difíciles.",
+    "additionalInfoAnswer2": "Toma descansos. Si te atascas, toma un descanso y vuelve al rompecabezas más tarde.",
+    "additionalInfoAnswer3": "Usa un lápiz. Las marcas de lápiz te ayudarán a llevar un registro de los valores posibles para cada celda.",
+    "additionalInfoAnswer4": "No tengas miedo de cometer errores. Todos cometen errores al resolver Sudokus. Simplemente aprende de tus errores y sigue adelante.",
+    "additionalInfoAnswer5": "¡Diviértete! Los Sudokus son una excelente manera de desafiar tu mente y divertirte al mismo tiempo."
+  }
+}

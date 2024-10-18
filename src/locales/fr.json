@@ -1,0 +1,28 @@
+{
+    "introduceSudoku": {
+      "title": "Bienvenue au jeu de Sudoku",
+      "whatIsSudoku": "Qu'est-ce que le Sudoku ?",
+      "answer": "Le Sudoku est un casse-tête logique de placement de chiffres. Dans le Sudoku classique, l'objectif est de remplir une grille de 9×9 avec des chiffres de sorte que chaque colonne, chaque ligne et chacune des neuf sous-grilles de 3×3 qui composent la grille (également appelées 'boîtes', 'blocs' ou 'régions') contiennent tous les chiffres de 1 à 9. Le créateur du puzzle fournit une grille partiellement remplie, qui pour un puzzle bien conçu a une solution unique.",
+      "ruleOfSudoku": "Règles du Sudoku",
+      "rule1": "Chacune des neuf sous-boîtes de 3x3 doit contenir les chiffres de 1 à 9, sans répétitions",
+      "rule2": "Chaque ligne doit contenir les chiffres de 1 à 9, sans répétitions",
+      "rule3": "Chaque colonne doit contenir les chiffres de 1 à 9, sans répétitions",
+      "rule4": "Chacune des neuf sous-boîtes de 3x3 doit contenir les chiffres de 1 à 9, sans répétitions",
+      "rule5": "Les chiffres de 1 à 9 doivent apparaître exactement une fois dans chaque ligne, colonne et sous-boîte de 3x3",
+      "howToPlay": "Comment jouer",
+      "howToPlayAnswer1": "Scannez le puzzle à la recherche de chiffres faciles. Cherchez des lignes, des colonnes ou des boîtes qui n'ont qu'une seule valeur possible pour une cellule. On les appelle des 'singles'. Remplissez ces cellules avec les chiffres appropriés.",
+      "howToPlayAnswer2": "Utilisez des marques au crayon pour noter les valeurs possibles pour chaque cellule. En résolvant le puzzle, vous pouvez rencontrer des cellules qui ont plus d'une valeur possible. Marquez ces cellules au crayon pour vous rappeler les possibilités.",
+      "howToPlayAnswer3": "Utilisez la logique pour éliminer les valeurs impossibles. Cherchez des cellules où une certaine valeur ne peut pas être placée car cela violerait les règles du Sudoku. Par exemple, si une ligne contient déjà les chiffres 1, 2 et 3, alors aucune autre cellule de cette ligne ne peut contenir ces chiffres.",
+      "howToPlayAnswer4": "Utilisez des techniques avancées pour résoudre le puzzle. Au fur et à mesure que vous devenez plus expérimenté dans la résolution des puzzles Sudoku, vous pouvez apprendre des techniques avancées qui peuvent vous aider à résoudre même les puzzles les plus difficiles. Certaines de ces techniques incluent :",
+      "howToPlayAnswer4.1": "X-Wing : Cette technique est utilisée pour éliminer les valeurs impossibles dans les cellules qui sont dans la même ligne ou colonne que deux cellules contenant la même valeur.",
+      "howToPlayAnswer4.2": "Swordfish : Cette technique est utilisée pour éliminer les valeurs impossibles dans les cellules qui sont dans la même boîte que trois cellules contenant la même valeur.",
+      "howToPlayAnswer4.3": "Singles cachés : Cette technique est utilisée pour trouver des valeurs qui sont la seule valeur possible pour une cellule, même si elles ne sont pas la seule valeur possible pour toute autre cellule dans la même ligne, colonne ou boîte.",
+      "howToPlayAnswer5": "Soyez patient et persévérant. Les puzzles Sudoku peuvent être difficiles, mais ils sont aussi très gratifiants à résoudre. Si vous êtes bloqué, faites une pause et revenez au puzzle plus tard. Avec de la pratique, vous deviendrez plus rapide et plus habile à résoudre les puzzles Sudoku.",
+      "additionalInfo": "Conseils supplémentaires pour résoudre les puzzles Sudoku :",
+      "additionalInfoAnswer1": "Commencez par les puzzles les plus faciles. Au fur et à mesure que vous gagnez en expérience, vous pouvez essayer des puzzles plus difficiles.",
+      "additionalInfoAnswer2": "Faites des pauses. Si vous êtes bloqué, faites une pause et revenez au puzzle plus tard.",
+      "additionalInfoAnswer3": "Utilisez un crayon. Les marques au crayon vous aideront à garder une trace des valeurs possibles pour chaque cellule.",
+      "additionalInfoAnswer4": "N'ayez pas peur de faire des erreurs. Tout le monde fait des erreurs en résolvant des puzzles Sudoku. Apprenez simplement de vos erreurs et continuez.",
+      "additionalInfoAnswer5": "Amusez-vous ! Les puzzles Sudoku sont un excellent moyen de stimuler votre esprit et de vous amuser en même temps."
+    }
+  }

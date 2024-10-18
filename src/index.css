@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif, 'Noto Sans Bengali', 'Noto Sans';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* IntroduceSudoku 组件的样式 */
+.introduce {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.introduce h1 {
+  color: #333;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.introduce h2 {
+  color: #444;
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.introduce p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.introduce ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.introduce li {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* 调整语言选择器的样式 */
+.language-selector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.language-selector button {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.language-selector button:hover {
+  background-color: #4a90e2;
+  color: #fff;
+  border-color: #4a90e2;
+}
+
+.language-selector button.active {
+  background-color: #4a90e2;
+  color: #fff;
+  border-color: #4a90e2;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .language-selector {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .language-selector button {
+    width: 80%;
+    margin-bottom: 5px;
+  }
+}
+
+/* RTL 语言支持 */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .introduce {
+  text-align: right;
+}
+
+[dir="rtl"] .introduce ul {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+[dir="rtl"] .language-selector button {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+/* 为阿拉伯语和乌尔都语设置适当的字体 */
+:lang(ar), :lang(ur) {
+  font-family: 'Amiri', 'Noto Naskh Arabic', 'Arial', sans-serif;
+}
+
+/* 调整阿拉伯语和乌尔都语的字体大小 */
+:lang(ar) .introduce, :lang(ur) .introduce {
+  font-size: 1.1em;
+}
+
+/* 确保数字仍然是从左到右的 */
+:lang(ar) .game-section, :lang(ur) .game-section,
+:lang(bn) .game-section, :lang(ru) .game-section {
+  direction: ltr;
+}
+
+/* 为孟加拉语和俄语添加字体声明 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&family=Noto+Sans&display=swap');
+
+:lang(bn) {
+  font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+:lang(ru) {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* 调整孟加拉语和俄语的字体大小 */
+:lang(bn) .introduce, :lang(ru) .introduce {
+  font-size: 1.1em;
+}
+
+.share-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.share-buttons h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.share-buttons button {
+  margin: 0 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.share-buttons button:hover {
+  transform: scale(1.1);
+}
+
+/* 添加到现有的 CSS 中 */
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer nav a {
+  margin-left: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.footer nav a:hover {
+  text-decoration: underline;
+}
+
+.about-page, .policy-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
