@@ -1,37 +1,27 @@
-"use client";
+import React, { useEffect } from 'react';
 
-import Script from "next/script";
-import * as gtag from "../gtas.js";
+const GA_TRACKING_ID = process.env.REACT_APP_GA_TRACKING_ID;
 
-const GoogleAnalytics = () => {
-  return (
-    <>
-      {gtag.GA_TRACKING_ID ? (
-        <>
-          <Script
-            strategy="afterInteractive"
-            src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
-          />
-          <Script
-            id="gtag-init"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${gtag.GA_TRACKING_ID}', {
-                page_path: window.location.pathname,
-                });
-              `,
-            }}
-          />
-        </>
-      ) : (
-        <></>
-      )}
-    </>
-  );
+const GoogleAnalytics: React.FC = () => {
+  useEffect(() => {
+    if (GA_TRACKING_ID) {
+      // 加载 Google Analytics 脚本
+      const script = document.createElement('script');
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`;
+      script.async = true;
+      document.head.appendChild(script);
+
+      // 初始化 Google Analytics
+      window.dataLayer = window.dataLayer || [];
+      function gtag(...args: any[]) {
+        window.dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', GA_TRACKING_ID);
+    }
+  }, []);
+
+  return null; // 这个组件不渲染任何内容
 };
 
 export default GoogleAnalytics;

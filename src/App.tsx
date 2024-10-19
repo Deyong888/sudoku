@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import './App.css';
 import { SudokuProvider } from './context/SudokuContext';
 import './i18n'; // 导入 i18n 配置
+import GoogleAnalytics from './GoogleAnalytics';
 
 /**
  * App is the root React component.
@@ -16,6 +17,7 @@ const App: React.FC = () => {
     <Router>
       <SudokuProvider>
         <div className="app-container">
+          <GoogleAnalytics />
           <Routes>
             <Route path="/" element={<Game />} />
             <Route path="/about" element={<About />} />
