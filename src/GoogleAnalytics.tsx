@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 // 为 window.dataLayer 添加类型定义
 declare global {
@@ -19,6 +20,8 @@ declare global {
 const GA_TRACKING_ID = process.env.REACT_APP_GA_TRACKING_ID;
 
 const GoogleAnalytics: React.FC = () => {
+  const location = useLocation();
+
   useEffect(() => {
     if (GA_TRACKING_ID) {
       // 加载 Google Analytics 脚本
@@ -35,10 +38,15 @@ const GoogleAnalytics: React.FC = () => {
       window.gtag('js', new Date());
       window.gtag('config', GA_TRACKING_ID);
     }
-  }, []);
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('config', process.env.REACT_APP_GA_TRACKING_ID as string, {
+        page_path: location.pathname + location.search
+      });
+    }
+  }, [location]);
 
   return null;
 };
 
 export default GoogleAnalytics;
-
