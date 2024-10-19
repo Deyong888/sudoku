@@ -1,5 +1,21 @@
 import React, { useEffect } from 'react';
 
+// 为 window.dataLayer 添加类型定义
+declare global {
+  interface Window {
+    dataLayer: any[];
+    gtag: (...args: any[]) => void;
+  }
+}
+
+// 声明全局 dataLayer 类型
+declare global {
+  interface Window {
+    dataLayer: any[];
+    gtag: (...args: any[]) => void;
+  }
+}
+
 const GA_TRACKING_ID = process.env.REACT_APP_GA_TRACKING_ID;
 
 const GoogleAnalytics: React.FC = () => {
@@ -13,15 +29,16 @@ const GoogleAnalytics: React.FC = () => {
 
       // 初始化 Google Analytics
       window.dataLayer = window.dataLayer || [];
-      function gtag(...args: any[]) {
+      window.gtag = function(...args: any[]) {
         window.dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', GA_TRACKING_ID);
+      };
+      window.gtag('js', new Date());
+      window.gtag('config', GA_TRACKING_ID);
     }
   }, []);
 
-  return null; // 这个组件不渲染任何内容
+  return null;
 };
 
 export default GoogleAnalytics;
+
