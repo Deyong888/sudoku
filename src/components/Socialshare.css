@@ -1,0 +1,39 @@
+/* src/components/Socialshare.css */
+.my-8 {
+    margin: 2rem 0; /* 上下外边距 */
+  }
+  
+  .text-center {
+    text-align: center; /* 标题居中 */
+  }
+  
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px; /* 图标的宽度 */
+    height: 48px; /* 图标的高度 */
+    border-radius: 50%; /* 圆形背景 */
+    background-color: #f0f0f0; /* 背景颜色 */
+    transition: background-color 0.3s; /* 背景颜色过渡效果 */
+  }
+  
+  .social-icon:hover {
+    background-color: #e0e0e0; /* 悬停时的背景颜色 */
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .gap-4 {
+    gap: 16px; /* 图标之间的间距 */
+  }

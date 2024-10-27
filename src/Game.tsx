@@ -12,6 +12,7 @@ import {
   FacebookShareButton, TwitterShareButton, WhatsappShareButton, LinkedinShareButton,
   FacebookIcon, TwitterIcon, WhatsappIcon, LinkedinIcon
 } from 'react-share';
+import SocialShare from './components/Socialshare'; // 导入 SocialShare 组件
 
 /**
  * Game is the main React component.
@@ -259,8 +260,8 @@ export const Game: React.FC<{}> = () => {
 
   return (
     <div dir={['ar', 'ur'].includes(i18n.language) ? 'rtl' : 'ltr'}>
-      <div className={overlay?"container blur":"container"}>
-        <Header onClick={onClickNewGame}/>
+      <div className={overlay ? "container blur" : "container"}>
+        <Header onClick={onClickNewGame} />
         <div className="innercontainer">
           <GameSection
             onClick={(indexOfArray: number) => onClickCell(indexOfArray)}
@@ -286,15 +287,12 @@ export const Game: React.FC<{}> = () => {
             </button>
           ))}
         </div>
+        <SocialShare /> {/* 使用 SocialShare 组件 */}
         <IntroduceSudoku />
         <Footer />
+
       </div>
-      <div className= { overlay
-                        ? "overlay overlay--visible"
-                        : "overlay"
-                      }
-           onClick={onClickOverlay}
-      >
+      <div className={overlay ? "overlay overlay--visible" : "overlay"} onClick={onClickOverlay}>
         <h2 className="overlay__text">
           You <span className="overlay__textspan1">solved</span> <span className="overlay__textspan2">it!</span>
         </h2>
@@ -302,6 +300,7 @@ export const Game: React.FC<{}> = () => {
       {showShareButtons && (
         <div className="share-buttons">
           <h3>{t('shareYourSuccess')}</h3>
+          {/* 现有的 react-share 组件 */}
           <FacebookShareButton url={shareUrl} quote={shareTitle}>
             <FacebookIcon size={32} round />
           </FacebookShareButton>
